@@ -1,6 +1,6 @@
 <?php
 # part 1
-$filename = str_replace([__DIR__,"\\","\/"],'',__FILE__);
+$filename = basename(__FILE__);
 echo "Current filename: " . $filename . "\n" . "Current line: " . __LINE__ . "\n";
 
 # part 2
