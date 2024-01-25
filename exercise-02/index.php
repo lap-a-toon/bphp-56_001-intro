@@ -1,6 +1,7 @@
 <?php
 # part 1
-echo "Current filename: " . __FILE__ . "\n" . "Current line: " . __LINE__ . "\n";
+$filename = str_replace([__DIR__,"\\","\/"],'',__FILE__);
+echo "Current filename: " . $filename . "\n" . "Current line: " . __LINE__ . "\n";
 
 # part 2
 $myHeredoc = <<<QWE

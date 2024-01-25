@@ -15,7 +15,6 @@ $type = is_bool($variable)?'bool':(is_float($variable)?'float':(is_int($variable
 echo "type is $type";
 
 // Another variant
-$type = 'other';
 if(is_bool($variable))
     $type = 'bool';
 elseif(is_float($variable))
@@ -26,6 +25,8 @@ elseif(is_string($variable))
     $type = 'string';
 elseif(is_null($variable))
     $type = 'null';
+else
+    $type = "other";
 
 echo "\ntype is $type";
 
